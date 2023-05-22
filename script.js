@@ -1,13 +1,13 @@
 //your JS code here. If required.
-
-function deleteEle() {
-	let selele =document.getElementsByTagName("select")[0];
-	let selval = selele.value;
-	let childlist = selele.children;
-
-	for(let i= 0 ; i < childlist.length;i++){
-		if(selele === childlist[i].value){
-			childlist[i].remove();
+function deleteElement() {
+	let sele = document.getElementsByTagName("select")[0];
+	let val = sele.value;
+	let child = sele.children;
+	for(let i = 0;i < sele.length;i++) {
+		if(val===child[i].value) {
+		 child[i].remove()
 		}
 	}
 }
+
+
